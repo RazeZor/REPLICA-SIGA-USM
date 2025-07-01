@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados - SIGA Universidad Técnica Federico Santa María</title>
+    <link rel="stylesheet" href="../CSS/certificados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="../IMG/logo-usm.png" alt="Logo">
+                </div>
+                <div class="">
+                    <img src="../IMG/sello-SIGA.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Session Bar -->
+    <div class="session-bar">
+        <div class="container">
+            <div class="session-content">
+                <div class="user-info">
+                    <span class="session-label">sesión de</span>
+                    <span class="user-name">CASTILLO JARAMILLO IGNACIO JAVIER</span>
+                    <span class="user-role">Estudiante - CONCEPCIÓN</span>
+                </div>
+                <div class="session-actions">
+                    <button class="action-btn" id="mainMenuBtn" title="Menú principal">
+                        <i class="fas fa-home"></i> menú principal
+                    </button>
+                    <button class="action-btn" id="logoutBtn" title="Cerrar sesión">
+                        <i class="fas fa-sign-out-alt"></i> cerrar sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="dashboard.html" class="breadcrumb-link">Dashboard</a>
+                <span class="breadcrumb-separator">→</span>
+                <span class="breadcrumb-current">Certificados</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <div class="container">
+            <div class="layout-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <!-- Solicitud de Certificado Section -->
+                        <div class="nav-section">
+                            <h3 class="nav-section-title">
+                                <span class="section-icon"><i class="fas fa-file"></i></span>
+                                Solicitud de Certificado
+                            </h3>
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="#" class="nav-link active">
+                                        <span class="link-icon"><i class="fas fa-file-signature"></i></span>
+                                        <span>Solicitud Certificado</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-file-alt"></i></span>
+                                        <span>Certificado Exento</span>
+                                        <span class="link-subtitle">(Vía Correo)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-trash-alt"></i></span>
+                                        <span>Anular certificado</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Listados de Certificados Section -->
+                        <div class="nav-section">
+                            <h3 class="nav-section-title">
+                                <span class="section-icon"><i class="fas fa-chart-bar"></i></span>
+                                Listados de Certificados
+                            </h3>
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-user"></i></span>
+                                        <span>Por alumno</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-hourglass-half"></i></span>
+                                        <span>En espera de pago</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-paper-plane"></i></span>
+                                        <span>Por emitir</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-check-circle"></i></span>
+                                        <span>Emitidos</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-exclamation-triangle"></i></span>
+                                        <span>Pendientes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-ban"></i></span>
+                                        <span>Nulos por no pago</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Opciones Section -->
+                        <div class="nav-section">
+                            <h3 class="nav-section-title">
+                                <span class="section-icon"><i class="fas fa-cog"></i></span>
+                                Opciones
+                            </h3>
+                            <ul class="nav-list">
+                                <li>
+                                    <a href="dashboard.html" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-arrow-left"></i></span>
+                                        <span>Volver</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard.html" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-home"></i></span>
+                                        <span>Ir a menú principal</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-user"></i></span>
+                                        <span>Cambiar perfil de usuario</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-envelope"></i></span>
+                                        <span>E-mail de contacto</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <span class="link-icon"><i class="fas fa-door-open"></i></span>
+                                        <span>Cerrar sesión</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="main-content">
+                    <div class="content-header">
+                        <h1 class="page-title">
+                            <span class="title-icon"><i class="fas fa-file"></i></span>
+                            Ingresar Certificado
+                        </h1>
+                    </div>
+
+                    <div class="content-body">
+                        <form class="certificate-form" id="certificateForm">
+                            <div class="form-section">
+                                <div class="form-row">
+                                    <label class="form-label" for="tipo">Tipo:</label>
+                                    <div class="form-field">
+                                        <select id="tipo" class="form-select" required>
+                                            <option value="no-exento" selected>No exento</option>
+                                            <option value="exento">Exento</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="form-label" for="alumno">Alumno:</label>
+                                    <div class="form-field">
+                                        <input 
+                                            type="text" 
+                                            id="alumno" 
+                                            class="form-input" 
+                                            value="IGNACIO JAVIER CASTILLO JARAMILLO (213200084-4)" 
+                                            readonly
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <label class="form-label" for="carrera">Carrera:</label>
+                                    <div class="form-field">
+                                        <div class="career-info">
+                                            <span class="career-name">Ingeniería en Informática</span>
+                                            <span class="career-date">(06/03/2025)</span>
+                                            <div class="career-details">
+                                                <span class="career-status">Regular (06/03/2025)</span>
+                                                <select class="career-select">
+                                                    <option value="vigente-concepcion" selected>Vigente Concepción</option>
+                                                    <option value="vigente-valparaiso">Vigente Valparaíso</option>
+                                                    <option value="vigente-santiago">Vigente Santiago</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="btn-icon">✓</span>
+                                    Aceptar
+                                </button>
+                                <button type="button" class="btn btn-secondary" id="cancelBtn">
+                                    <span class="btn-icon">✕</span>
+                                    Cancelar
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Info Panel -->
+                        <div class="info-panel">
+                            <div class="info-header">
+                                <h3 class="info-title">
+                                    <span class="info-icon">ℹ️</span>
+                                    Información sobre Certificados
+                                </h3>
+                            </div>
+                            <div class="info-content">
+                                <ul class="info-list">
+                                    <li>Los certificados no exentos tienen un costo asociado</li>
+                                    <li>El tiempo de procesamiento es de 3-5 días hábiles</li>
+                                    <li>Puedes consultar el estado en "Listados de Certificados"</li>
+                                    <li>Los certificados exentos se envían por correo electrónico</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/certificados.js"></script>
+</body>
+</html>

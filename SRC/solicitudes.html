@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Carrera - SIGA Universidad Técnica Federico Santa María</title>
+    <link rel="stylesheet" href="../CSS/solicitudes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="university-info">
+                        <img src="../IMG/logo-usm.png" alt="Logo">
+                    </div>
+                </div>
+                <div >
+                    <img src="../IMG/sello-SIGA.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Session Bar -->
+    <div class="session-bar">
+        <div class="container">
+            <div class="session-content">
+                <div class="user-info">
+                    <span class="session-label">sesión de</span>
+                    <span class="user-name">IGNACIO JAVIER CASTILLO JARAMILLO</span>
+                    <span class="user-role">Estudiante - CONCEPCIÓN</span>
+                    <span class="session-date">Martes 01 de Julio de 2025</span>
+                </div>
+                <div class="session-actions">
+                    <button class="action-btn" id="mainMenuBtn" title="Menú principal">
+                        <i class="fas fa-home"></i> menú principal
+                    </button>
+                    <button class="action-btn" id="logoutBtn" title="Cerrar sesión">
+                        <i class="fas fa-sign-out-alt"></i> cerrar sesión
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../SRC/panel.html" class="breadcrumb-link">Menú principal</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="#" class="breadcrumb-link">Solicitudes Académicas</a>
+                <span class="breadcrumb-separator">→</span>
+                <span class="breadcrumb-current">Cambio de Carrera</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <div class="container">
+            <div class="layout-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <nav class="sidebar-nav">
+                        <div class="nav-section">
+                            <h3 class="nav-section-title">
+                                <span class="section-icon"><i class="fas fa-user"></i></span>
+                                Alumno
+                            </h3>
+                            <ul class="nav-list">
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-file-alt"></i></span>Consulta</a></li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-file"></i></span>Formulario</a></li>
+                                <li>
+                                    <a href="#" class="nav-link active">
+                                        <span class="link-icon"><i class="fas fa-exchange-alt"></i></span>Cambio de carrera
+                                    </a>
+                                </li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-check-circle"></i></span>Justificación de inasistencia</a></li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-chart-bar"></i></span>Matrícula de asignaturas</a></li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-book"></i></span>Programa de estudios</a></li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-graduation-cap"></i></span>Solicitud profesional cond. espec.</a></li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-book-reader"></i></span>Solicitud de otras actividades educacionales</a></li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-exchange-alt"></i></span>Reincorporación</a></li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-exclamation-triangle"></i></span>Retiro definitivo</a></li>
+                                <li><a href="#" class="nav-link"><span class="link-icon"><i class="fas fa-building"></i></span>Traslado a otro Campus/Sede</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="main-content">
+                    <div class="content-header">
+                        <h1 class="page-title">
+                            <span class="title-icon"><i class="fas fa-exchange-alt"></i></span>
+                            Formulario de Solicitud - Cambio de Carrera
+                        </h1>
+                        <div class="help-actions">
+                            <button class="help-btn" id="helpBtn">
+                                <i class="fas fa-question-circle"></i>
+                                Ayuda
+                            </button>
+                            <button class="send-btn" id="sendBtn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Solicitud online
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="content-body">
+                        <!-- Alert Message -->
+                        <div class="alert alert-warning">
+                            <div class="alert-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="alert-content">
+                                <p><strong>Esta solicitud debe ser enviada a la Dirección de Estudios o Secretaría Académica de su Campus/Sede respectivo.</strong></p>
+                                <p><small>El estudiante es responsable del impacto que puede ocasionar la suspensión de estudios en sus beneficios (MINEDUC, Crédito Aval Estado, JUNAEB, USM, Etc.). Recuerde informarse con su Asistente Social y realizar los trámites exigidos en cada caso.</small></p>
+                            </div>
+                        </div>
+
+                        <form class="career-change-form" id="careerChangeForm">
+                            <!-- Student Information -->
+                            <div class="form-section">
+                                <h2 class="section-title">Información del Estudiante</h2>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label class="form-label">RUT</label>
+                                        <input type="text" class="form-input" value="21.320.084-4" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Nombre</label>
+                                        <input type="text" class="form-input" value="IGNACIO JAVIER CASTILLO JARAMILLO" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Celular</label>
+                                        <input type="text" class="form-input" value="949566546" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">E-Mail personal</label>
+                                        <input type="email" class="form-input" value="nachojavier@gmail.com" readonly>
+                                    </div>
+                                    <div class="form-group span-2">
+                                        <label class="form-label">Carrera Actual</label>
+                                        <input type="text" class="form-input" value="Ingeniería en Informática, Sin mención, Concepción, Regular (Vigente)" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Motivation -->
+                            <div class="form-section">
+                                <h2 class="section-title">Motivo de la Solicitud</h2>
+                                <div class="form-group">
+                                    <label class="form-label" for="motivo">
+                                        Explique detalladamente el motivo de su solicitud
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea 
+                                        id="motivo" 
+                                        class="form-textarea" 
+                                        placeholder="Ingrese el motivo de su solicitud de cambio de carrera..."
+                                        maxlength="255"
+                                        required
+                                    ></textarea>
+                                    <div class="character-count">
+                                        <span id="charCount">0</span>/255 caracteres
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="copiaAlumno" class="form-checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            Copia del alumno
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="otraDocumentacion" class="form-checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            Otra documentación
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Student Benefits -->
+                            <div class="form-section">
+                                <h2 class="section-title">Beneficios Estudiantiles</h2>
+                                <div class="benefits-info">
+                                    <p class="benefits-question">¿Cuenta con algunos de estos beneficios?</p>
+                                    <ul class="benefits-list">
+                                        <li>1. Beca MINEDUC</li>
+                                        <li>2. Beca MINEDUC</li>
+                                        <li>3. Fondo Solidario de Crédito Universitario</li>
+                                        <li>4. Crédito con Aval del Estado</li>
+                                        <li>5. Beca JUNAEB</li>
+                                        <li>6. Beca USM</li>
+                                    </ul>
+                                    <div class="benefits-selection">
+                                        <p class="selection-instruction">
+                                            Debe seleccionar la opción <strong>SÍ</strong>.<br>
+                                            En el caso que no cuente con ninguna de estas ayudas, seleccione la opción <strong>NO</strong>.
+                                        </p>
+                                        <div class="radio-group">
+                                            <label class="radio-label">
+                                                <input type="radio" name="beneficios" value="si" class="form-radio" required>
+                                                <span class="radio-custom"></span>
+                                                SÍ
+                                            </label>
+                                            <label class="radio-label">
+                                                <input type="radio" name="beneficios" value="no" class="form-radio" required>
+                                                <span class="radio-custom"></span>
+                                                NO
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Career Selection -->
+                            <div class="form-section">
+                                <h2 class="section-title">Seleccione la carrera, mención o plan al que deseas ingresar</h2>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label class="form-label" for="campus">Campus/Sede <span class="required">*</span></label>
+                                        <select id="campus" class="form-select" required>
+                                            <option value="">Seleccione...</option>
+                                            <option value="concepcion" selected>Concepción</option>
+                                            <option value="valparaiso">Valparaíso</option>
+                                            <option value="santiago">Santiago</option>
+                                            <option value="vina-del-mar">Viña del Mar</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="carrera">Carrera <span class="required">*</span></label>
+                                        <select id="carrera" class="form-select" required>
+                                            <option value="">Seleccione...</option>
+                                            <option value="ing-informatica" selected>Ingeniería en Informática</option>
+                                            <option value="ing-civil-informatica">Ingeniería Civil Informática</option>
+                                            <option value="ing-comercial">Ingeniería Comercial</option>
+                                            <option value="ing-industrial">Ingeniería Industrial</option>
+                                            <option value="ing-electronica">Ingeniería Electrónica</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="mencion">Mención</label>
+                                        <select id="mencion" class="form-select">
+                                            <option value="">Sin mención</option>
+                                            <option value="sistemas">Sistemas de Información</option>
+                                            <option value="redes">Redes y Comunicaciones</option>
+                                            <option value="software">Ingeniería de Software</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="plan">Plan <span class="required">*</span></label>
+                                        <select id="plan" class="form-select" required>
+                                            <option value="">Seleccione...</option>
+                                            <option value="2920" selected>2920</option>
+                                            <option value="2919">2919</option>
+                                            <option value="2918">2918</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="jornada-info">
+                                    <span class="jornada-label">Jornada:</span>
+                                    <span class="jornada-value">Diurno</span>
+                                </div>
+                            </div>
+
+                            <!-- Form Actions -->
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" id="cancelBtn">
+                                    <span class="link-icon"><i class="fas fa-file-alt"></i></span>
+                                    Cancelar
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                    Enviar Solicitud
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/solicitudes.js"></script>
+</body>
+</html>

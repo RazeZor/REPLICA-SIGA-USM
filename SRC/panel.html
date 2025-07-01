@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGA Universidad Técnica Federico Santa María</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/panel.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="university-info">
+                        <img src="../IMG/logo-usm.png" alt="Logo">
+                    </div>
+                </div>
+                <div >
+                    <img src="../IMG/sello-SIGA.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Session Bar -->
+    <div class="session-bar">
+        <div class="container">
+            <div class="session-content">
+                <div class="user-info">
+                    <span class="session-label">sesión de</span>
+                    <span class="user-name">CASTILLO JARAMILLO IGNACIO JAVIER</span>
+                    <span class="user-role">Estudiante - CONCEPCIÓN</span>
+                </div>
+                <div class="session-actions">
+                    <button class="action-btn" id="mainMenuBtn" title="Menú principal">
+                        <i class="fas fa-home"></i> menú principal
+                    </button>
+                    <button class="action-btn" id="logoutBtn" title="Cerrar sesión">
+                        <i class="fas fa-sign-out-alt"></i> cerrar sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <main class="main-content">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Column 1 -->
+                <div class="dashboard-column">
+                    <a href="../SRC/ficha-personal.html" class="menu-item">
+                        <i class="fas fa-user"></i>
+                        <span class="item-text">Ficha personal</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Resumen académico</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-check"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Autorización académica</span>
+                        <span class="item-arrow">→</span>
+                        
+                    </a>
+                    <a href="../SRC/Certificados.html" class="menu-item">
+                        <i class="fas fa-file"></i>
+                        <span class="item-text">Certificados</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="item-icon">✉</span>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Correo y Credencial USM</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="dashboard-column">
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-map"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Planes de carrera</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Avance curricular</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-book"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Asignaturas inscritas</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="../SRC/solicitudes.html" class="menu-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="item-text">Solicitudes Académicas</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="dashboard-column">
+                    <a href="" class="menu-item">
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Horario asignaturas</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-money-bill"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Deuda</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-undo"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Cambio de mención</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-clipboard-list"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Encuesta Primera Matemática</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="dashboard-column">
+                    <a href="../SRC/horario.html" class="menu-item">
+                        <i class="fas fa-calendar"></i>
+                        <span class="item-text">Horario personal</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-lock"></i>
+                        <span class="item-text">Inscripción</span>
+                        <span class="item-arrow">→</span>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <button class="help-chat-btn" id="helpChatBtn" title="Ayuda">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>SISTEMA DE INFORMACIÓN DE GESTIÓN ACADÉMICA</p>
+                <p>© 2025 Universidad Técnica Federico Santa María</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/panel.js"></script>
+</body>
+</html>

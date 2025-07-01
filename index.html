@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGA - Universidad Técnica Federico Santa María</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="university-info">
+                        <img src="./IMG/logo-usm.png" alt="Logo">
+                    </div>
+                </div>
+
+           <img src="./IMG/sello-SIGA.png" alt="Logo">
+                
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#" class="nav-link">
+                    <span class="nav-icon"></span>
+                    <span>¿Qué es SIGA?</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="nav-icon"></span>
+                    <span>Simbología</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="nav-icon"></span>
+                    <span>Informaciones</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="nav-icon"></span>
+                    <span>Contacto</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="content-grid">
+                <div class="notices-section">
+                    <div class="alert alert-info">
+                        <div class="alert-icon">ℹ</div>
+                        <div class="alert-content">
+                            <strong>Atención:</strong> El plazo para realizar retiro temporal y/o definitivo (sin llevar notas),
+                            según calendario académico, es hasta el día <strong>jueves 19 de junio</strong> del presente año.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">
+                                Información Importante sobre Rebaja de Arancel Primer Semestre 2025
+                            </h2>
+                            <p class="card-description">
+                                Solicitudes Alumno regular de dedicación parcial y Matrícula sin ramos de estudiantes diurnos
+                            </p>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-section">
+                                <p class="info-title">Estudiantes con solicitud académica pendiente de resolución:</p>
+                                <p>
+                                    Las solicitudes están siendo revisadas por orden de ingreso al sistema SIGA. Desde ya agradecemos
+                                    paciencia en su respuesta debido a la gran cantidad de solicitudes recibidas.
+                                </p>
+                            </div>
+                            <div class="info-section">
+                                <p class="info-title">Estudiantes sin solicitud académica:</p>
+                                <p>
+                                    Según calendario académico VRA, plazo máximo para elevar dicha petición
+                                    <strong>19 de junio de 2025</strong>. Esta solicitud debe ser elevada en SIGA > Solicitudes
+                                    académicas y peticiones > Alumno regular de dedicación parcial o Matrícula sin ramos.
+                                </p>
+                            </div>
+                            <p class="info-link">
+                                Más información disponible en:
+                                <a href="https://rree.usm.cl" target="_blank">https://rree.usm.cl</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login Section -->
+                <div class="login-section">
+                    <div class="login-card">
+                        <div class="login-header">
+                            <div class="login-icon">
+                                <img src="../IMG/Logo_UTFSM.png" alt="Logo" width="50" height="50">
+                            </div>
+                            <h2 class="login-title">Iniciar Sesión</h2>
+                            <p class="login-description">Accede a tu cuenta SIGA</p>
+                        </div>
+                        <div class="login-content">
+                            <form class="login-form" id="loginForm">
+                                <div class="form-group">
+                                    <label for="email-domain" class="form-label">Correo Electrónico</label>
+                                    <div class="select-wrapper">
+                                        <span class="select-icon">✉</span>
+                                        <select id="email-domain" class="form-select" required>
+                                            <option value="">Dominio</option>
+                                            <option value="usm.cl">@usm.cl</option>
+                                            <option value="alumnos.usm.cl">@alumnos.usm.cl</option>
+                                            <option value="estudiantes.usm.cl">@estudiantes.usm.cl</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="form-label">Usuario</label>
+                                    <input
+                                        type="text"
+                                        id="username"
+                                        class="form-input"
+                                        placeholder="Ingresa tu nombre de usuario"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <div class="input-wrapper">
+                                        <span class="input-icon">🔒</span>
+                                        <input
+                                            type="password"
+                                            id="password"
+                                            class="form-input with-icon"
+                                            placeholder="Ingresa tu contraseña"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="login-button">
+                                    Ingresar a SIGA
+                                </button>
+                            </form>
+
+                            <div class="login-links">
+                                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                                <div class="help-text">
+                                    ¿Necesitas ayuda?
+                                    <a href="#" class="help-link">Contacta soporte</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="quick-links-card">
+                        <div class="quick-links-header">
+                            <h3>Enlaces Rápidos</h3>
+                        </div>
+                        <div class="quick-links-content">
+                            <a href="#" class="quick-link">
+                                <span class="quick-link-icon">💬</span>
+                                <span>Mesa de Ayuda</span>
+                            </a>
+                            <a href="#" class="quick-link">
+                                <span class="quick-link-icon">📖</span>
+                                <span>Manual de Usuario</span>
+                            </a>
+                            <a href="#" class="quick-link">
+                                <span class="quick-link-icon">❓</span>
+                                <span>Preguntas Frecuentes</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Universidad Técnica Federico Santa María - Sistema SIGA</p>
+                <p>Actualizado el 25-06-2025 - v3.2.1</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>

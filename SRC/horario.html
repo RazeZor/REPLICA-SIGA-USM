@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario Personal - SIGA Universidad Técnica Federico Santa María</title>
+    <link rel="stylesheet" href="../CSS/horario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="../IMG/logo-usm.png" alt="Logo">
+                </div>
+                <div class="">
+                    <img src="../IMG/sello-siga.png" alt="Siga">   
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- User Session Bar -->
+    <div class="session-bar">
+        <div class="container">
+            <div class="session-content">
+                <div class="user-info">
+                    <span class="session-label">sesión de</span>
+                    <span class="user-name">CASTILLO JARAMILLO IGNACIO JAVIER</span>
+                    <span class="user-role">Estudiante - CONCEPCIÓN</span>
+                </div>
+                <div class="session-actions">
+                    <button class="action-btn" id="mainMenuBtn" title="Menú principal">
+                        <i class="fas fa-home"></i> menú principal
+                    </button>
+                    <button class="action-btn" id="logoutBtn" title="Cerrar sesión">
+                        <i class="fas fa-sign-out-alt"></i> cerrar sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="dashboard.html" class="breadcrumb-link">Dashboard</a>
+                <span class="breadcrumb-separator">→</span>
+                <span class="breadcrumb-current">Horario Personal</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">
+                    <span class="title-icon"><i class="fas fa-calendar-alt"></i></span>
+                    Horario Personal
+                </h1>
+                <div class="schedule-controls">
+                    <div class="student-info">
+                        <span class="info-label">Alumno:</span>
+                        <span class="info-value">CASTILLO JARAMILLO IGNACIO JAVIER</span>
+                    </div>
+                    <div class="period-selector">
+                        <label for="period">Período:</label>
+                        <select id="period" class="period-select">
+                            <option value="2025-1" selected>2025-1</option>
+                            <option value="2024-2">2024-2</option>
+                            <option value="2024-1">2024-1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule Grid -->
+            <div class="schedule-container">
+                <div class="schedule-grid">
+    <!-- Headers -->
+    <div class="time-header">Bloque</div>
+    <div class="day-header">Lunes</div>
+    <div class="day-header">Martes</div>
+    <div class="day-header">Miércoles</div>
+    <div class="day-header">Jueves</div>
+    <div class="day-header">Viernes</div>
+    <div class="day-header">Sábado</div>
+
+    <!-- Block 1 -->
+    <div class="time-slot">1</div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="08:15-09:00" data-type="Cátedra" data-parallel="701">
+            EIN086B-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block tope" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="121" data-time="08:15-09:00" data-type="Cátedra" data-parallel="701">
+            EIN086B-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="121" data-time="08:15-09:00" data-type="Cátedra" data-parallel="702">
+            EIN086B-702
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN412" data-name="INTRODUCCIÓN A LA INGENIERÍA" data-professor="G. VILLALOBOS" data-room="121" data-time="08:15-09:00" data-type="Cátedra" data-parallel="701">
+            EIN412-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="08:15-09:00" data-type="Cátedra" data-parallel="701">
+            EIN086B-701
+        </div>
+    </div>
+    <div class="schedule-cell"></div>
+
+    <!-- Block 2 -->
+    <div class="time-slot">2</div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="09:05-09:50" data-type="Cátedra" data-parallel="701">
+            EIN086B-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block tope" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="121" data-time="09:05-09:50" data-type="Cátedra" data-parallel="701">
+            EIN086B-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="121" data-time="09:05-09:50" data-type="Cátedra" data-parallel="702">
+            EIN086B-702
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN412" data-name="INTRODUCCIÓN A LA INGENIERÍA" data-professor="G. VILLALOBOS" data-room="121" data-time="09:05-09:50" data-type="Cátedra" data-parallel="701">
+            EIN412-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="09:05-09:50" data-type="Cátedra" data-parallel="701">
+            EIN086B-701
+        </div>
+    </div>
+    <div class="schedule-cell"></div>
+
+    <!-- Block 3 -->
+    <div class="time-slot">3</div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN412" data-name="INTRODUCCIÓN A LA INGENIERÍA" data-professor="G. VILLALOBOS" data-room="121" data-time="10:10-10:55" data-type="Cátedra" data-parallel="701">
+            EIN412-701
+        </div>
+    </div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="FIS098B" data-name="FÍSICA GENERAL" data-professor="J. MARTINEZ" data-room="201" data-time="10:10-10:55" data-type="Cátedra" data-parallel="701">
+            FIS098B-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="10:10-10:55" data-type="Laboratorio" data-parallel="702">
+            EIN086B-702
+        </div>
+    </div>
+    <div class="schedule-cell"></div>
+
+    <!-- Blocks 4-8 (empty) -->
+    <div class="time-slot">4</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">5</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">6</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">7</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">8</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <!-- Block 9 -->
+    <div class="time-slot">9</div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="14:00-14:45" data-type="Laboratorio" data-parallel="702">
+            EIN086B-702
+        </div>
+    </div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="FIS098B" data-name="FÍSICA GENERAL" data-professor="J. MARTINEZ" data-room="201" data-time="14:00-14:45" data-type="Laboratorio" data-parallel="701">
+            FIS098B-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="14:00-14:45" data-type="Laboratorio" data-parallel="702">
+            EIN086B-702
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="14:00-14:45" data-type="Laboratorio" data-parallel="701">
+            EIN086B-701
+        </div>
+    </div>
+    <div class="schedule-cell"></div>
+
+    <!-- Block 10 -->
+    <div class="time-slot">10</div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="14:50-15:35" data-type="Laboratorio" data-parallel="702">
+            EIN086B-702
+        </div>
+    </div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="FIS098B" data-name="FÍSICA GENERAL" data-professor="J. MARTINEZ" data-room="201" data-time="14:50-15:35" data-type="Laboratorio" data-parallel="701">
+            FIS098B-701
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="14:50-15:35" data-type="Laboratorio" data-parallel="702">
+            EIN086B-702
+        </div>
+    </div>
+    <div class="schedule-cell">
+        <div class="class-block inscrita" data-tooltip="true" data-class="EIN086B" data-name="INGENIERÍA DE SOFTWARE" data-professor="R. PEREZ" data-room="L26" data-time="14:50-15:35" data-type="Laboratorio" data-parallel="701">
+            EIN086B-701
+        </div>
+    </div>
+    <div class="schedule-cell"></div>
+
+    <!-- Blocks 11-20 (empty for brevity) -->
+    <div class="time-slot">11</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">12</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">13</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">14</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">15</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">16</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">17</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">18</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">19</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+
+    <div class="time-slot">20</div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+    <div class="schedule-cell"></div>
+</div>
+
+                <!-- Legend -->
+                <div class="schedule-legend">
+                    <h3 class="legend-title">Guía de colores de bloques</h3>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <div class="legend-color tope"></div>
+                            <span>tope</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color inscrita"></div>
+                            <span>inscrita</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color pre-inscrita"></div>
+                            <span>pre-inscrita</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color libre"></div>
+                            <span>libre</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-note">
+                    <p><em>Los horarios están sujetos a modificaciones.</em></p>
+                    <p><small>Posicione el cursor sobre un bloque para ver el detalle del horario.</small></p>
+                </div>
+            </div>
+
+            <!-- Schedule Details -->
+            <div class="schedule-details">
+                <h2 class="details-title">
+                    <span class="details-icon"><i class="fas fa-exclamation-triangle"></i></span>
+                    Detalle de tope de horario
+                </h2>
+                <div class="details-table">
+                    <div class="table-header">
+                        <div class="table-cell">Día</div>
+                        <div class="table-cell">Bloque</div>
+                        <div class="table-cell">Asignatura</div>
+                        <div class="table-cell">Par.</div>
+                        <div class="table-cell">Departamento</div>
+                        <div class="table-cell">Profesor</div>
+                        <div class="table-cell">Campus/Sede</div>
+                        <div class="table-cell">Jornada</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Viernes</div>
+                        <div class="table-cell">1-2<br><span class="time-detail">(08:15-09:25)</span></div>
+                        <div class="table-cell">
+                            <strong>EIN086B - INGENIERÍA DE SOFTWARE (Inscrita)</strong><br>
+                            <small>Sala L26, INFORMÁTICA 2</small>
+                        </div>
+                        <div class="table-cell">701</div>
+                        <div class="table-cell">ELECTRÓNICA E INFORMÁTICA</div>
+                        <div class="table-cell">R. PEREZ</div>
+                        <div class="table-cell">Concepción</div>
+                        <div class="table-cell">Diurna</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Viernes</div>
+                        <div class="table-cell">3-4<br><span class="time-detail">(08:50-09:25)</span></div>
+                        <div class="table-cell">
+                            <strong>EIN412-B - INTRODUCCIÓN A LA INGENIERÍA (Inscrita)</strong><br>
+                            <small>Sala 121 (54)</small>
+                        </div>
+                        <div class="table-cell">701</div>
+                        <div class="table-cell">CIENCIAS</div>
+                        <div class="table-cell">G. VILLALOBOS</div>
+                        <div class="table-cell">Concepción</div>
+                        <div class="table-cell">Diurna</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-secondary" id="printBtn">
+                    <span class="btn-icon"><i class="fas fa-print"></i></span>
+                    Imprimir
+                </button>
+                <button class="btn btn-primary" id="backBtn">
+                    <span class="btn-icon"><i class="fas fa-arrow-left"></i></span>
+                    Volver
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Tooltip -->
+    <div id="tooltip" class="tooltip">
+        <div class="tooltip-header">
+            <h4 id="tooltip-title"></h4>
+        </div>
+        <div class="tooltip-content">
+            <div class="tooltip-row">
+                <span class="tooltip-label">Campus/Sede:</span>
+                <span id="tooltip-campus">Concepción</span>
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">Jornada:</span>
+                <span id="tooltip-jornada">Diurna</span>
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">Horario:</span>
+                <span id="tooltip-time"></span>
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">Sala:</span>
+                <span id="tooltip-room"></span>
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">Profesor:</span>
+                <span id="tooltip-professor"></span>
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">Tipo:</span>
+                <span id="tooltip-type"></span>
+            </div>
+            <div class="tooltip-row">
+                <span class="tooltip-label">Paralelo:</span>
+                <span id="tooltip-parallel"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/horario.js"></script>
+</body>
+</html>
